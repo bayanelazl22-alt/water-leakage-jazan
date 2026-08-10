@@ -1,0 +1,2016 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="كشف تسربات المياه بأحدث الأجهزة الإلكترونية والحرارية في جازان مع تقارير معتمدة."
+    />
+    <meta name="theme-color" content="#071b33" />
+    <title>كشف تسربات المياه | جازان</title>
+    <style>
+      :root {
+        --navy: #071b33;
+        --navy-2: #0b2d50;
+        --blue: #1687da;
+        --blue-bright: #2da9f4;
+        --cyan: #74ddf5;
+        --sand: #f3c878;
+        --cream: #fffaf0;
+        --ink: #10243b;
+        --muted: #60748a;
+        --line: rgba(16, 36, 59, 0.12);
+        --green: #13bd70;
+        --shadow: 0 24px 70px rgba(3, 23, 45, 0.24);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 12% 7%, rgba(113, 218, 241, 0.26), transparent 28rem),
+          linear-gradient(180deg, #f7fcff 0%, #eef8fc 48%, #fffaf0 100%);
+        font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+        line-height: 1.8;
+        text-align: center;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: -4rem;
+        right: 1rem;
+        z-index: 100;
+        padding: 0.65rem 1rem;
+        color: white;
+        background: var(--blue);
+        border-radius: 0 0 0.7rem 0.7rem;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+
+      .page-shell {
+        position: relative;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 1.2rem 2rem;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 0;
+        flex-direction: column;
+        gap: 0.85rem;
+        padding: 1.15rem 1rem 1.3rem;
+        color: white;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        order: 2;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 43px;
+        height: 43px;
+        place-items: center;
+        color: var(--navy);
+        background: linear-gradient(145deg, var(--cyan), #d8fbff);
+        border-radius: 14px 14px 14px 5px;
+        box-shadow: 0 6px 18px rgba(24, 169, 220, 0.28);
+      }
+
+      .brand-mark svg {
+        width: 26px;
+        height: 26px;
+      }
+
+      .brand-text {
+        display: grid;
+        line-height: 1.2;
+        text-align: center;
+      }
+
+      .brand-text strong {
+        font-size: 0.98rem;
+      }
+
+      .brand-text span {
+        margin-top: 0.18rem;
+        color: #b8d5e8;
+        font-size: 0.68rem;
+        font-weight: 500;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.45rem;
+        color: #d7e8f5;
+        font-size: 0.88rem;
+        order: 1;
+      }
+
+      .nav a {
+        transition: color 0.2s ease;
+      }
+
+      .nav a:hover,
+      .nav a:focus-visible {
+        color: var(--cyan);
+      }
+
+      .header-call {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem;
+        padding: 0.58rem 0.82rem;
+        color: var(--navy);
+        background: var(--sand);
+        border-radius: 999px;
+        font-size: 0.82rem;
+        font-weight: 800;
+        box-shadow: 0 8px 18px rgba(243, 200, 120, 0.2);
+        order: 3;
+      }
+
+      .menu-toggle {
+        display: none;
+        padding: 0.45rem;
+        color: white;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 0.6rem;
+        cursor: pointer;
+      }
+
+      .menu-toggle svg {
+        display: block;
+        width: 23px;
+        height: 23px;
+      }
+
+      .hero-wrap {
+        position: relative;
+        overflow: hidden;
+        color: white;
+        background:
+          linear-gradient(108deg, rgba(4, 22, 43, 0.98) 4%, rgba(8, 52, 86, 0.91) 55%, rgba(10, 102, 150, 0.82) 100%),
+          linear-gradient(135deg, #092546, #0d99cc);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-wrap::before {
+        position: absolute;
+        top: -8rem;
+        left: -5rem;
+        width: 28rem;
+        height: 28rem;
+        border: 1px solid rgba(116, 221, 245, 0.24);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 35px rgba(116, 221, 245, 0.04),
+          0 0 0 70px rgba(116, 221, 245, 0.04);
+        content: "";
+      }
+
+      .hero-wrap::after {
+        position: absolute;
+        right: 44%;
+        bottom: -7rem;
+        width: 18rem;
+        height: 18rem;
+        background: rgba(45, 169, 244, 0.17);
+        border-radius: 50%;
+        filter: blur(10px);
+        content: "";
+      }
+
+      .hero {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 2rem;
+        align-items: center;
+        min-height: 580px;
+        padding: 4.3rem clamp(1.4rem, 5vw, 5.4rem) 4.2rem;
+      }
+
+      .hero-copy {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        margin: 0 0 1rem;
+        color: var(--cyan);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .eyebrow::before {
+        width: 30px;
+        height: 2px;
+        background: var(--sand);
+        content: "";
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 620px;
+        margin-bottom: 1.1rem;
+        font-size: clamp(2.15rem, 5vw, 4.25rem);
+        line-height: 1.18;
+        letter-spacing: -0.055em;
+      }
+
+      .hero-copy > p:not(.eyebrow) {
+        max-width: 570px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.65rem;
+        color: #d6edf8;
+        font-size: clamp(1rem, 2vw, 1.16rem);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-actions .btn {
+        min-width: 235px;
+        min-height: 62px;
+        font-size: 1.04rem;
+      }
+
+      .action-prompt {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0 auto 0.65rem;
+        padding: 0.35rem 0.8rem;
+        color: #06233e;
+        background: linear-gradient(135deg, var(--cyan), #d9fbff);
+        border-radius: 999px;
+        font-size: 0.74rem;
+        font-weight: 900;
+        animation: promptFloat 2.4s ease-in-out infinite;
+      }
+
+      .action-prompt::before {
+        width: 7px;
+        height: 7px;
+        background: var(--green);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(19, 189, 112, 0.16);
+        content: "";
+      }
+
+      @keyframes promptFloat {
+        0%,
+        100% {
+          transform: translateY(0);
+          box-shadow: 0 7px 18px rgba(116, 221, 245, 0.15);
+        }
+        50% {
+          transform: translateY(-5px);
+          box-shadow: 0 13px 26px rgba(116, 221, 245, 0.3);
+        }
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.55rem;
+        min-height: 49px;
+        padding: 0.65rem 1.1rem;
+        border: 1px solid transparent;
+        border-radius: 0.75rem;
+        font-size: 0.94rem;
+        font-weight: 800;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      }
+
+      .btn:hover,
+      .btn:focus-visible {
+        transform: translateY(-3px);
+      }
+
+      .btn svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .btn-primary {
+        color: var(--navy);
+        background: var(--sand);
+        box-shadow: 0 9px 22px rgba(243, 200, 120, 0.19);
+      }
+
+      .btn-primary:hover,
+      .btn-primary:focus-visible {
+        background: #ffd995;
+        box-shadow: 0 13px 28px rgba(243, 200, 120, 0.31);
+      }
+
+      .btn-outline {
+        color: white;
+        border-color: rgba(255, 255, 255, 0.38);
+        background: rgba(255, 255, 255, 0.07);
+      }
+
+      .btn-outline:hover,
+      .btn-outline:focus-visible {
+        border-color: var(--cyan);
+        background: rgba(116, 221, 245, 0.14);
+      }
+
+      .hero-note {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.58rem;
+        margin-top: 1.35rem;
+        color: #b8d5e8;
+        font-size: 0.78rem;
+      }
+
+      .hero-note svg {
+        flex: 0 0 auto;
+        width: 18px;
+        height: 18px;
+        color: var(--cyan);
+      }
+
+      .hero-card {
+        position: relative;
+        min-height: 330px;
+        padding: 1.35rem;
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.05));
+        border: 1px solid rgba(255, 255, 255, 0.23);
+        border-radius: 1.4rem;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.22);
+        backdrop-filter: blur(8px);
+      }
+
+      .hero-card-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+        color: #d8f4fb;
+        font-size: 0.82rem;
+      }
+
+      .live-dot {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        color: #d8fae9;
+      }
+
+      .live-dot::before {
+        width: 8px;
+        height: 8px;
+        background: #48e28e;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(72, 226, 142, 0.14);
+        content: "";
+      }
+
+      .scanner {
+        position: relative;
+        display: grid;
+        min-height: 238px;
+        place-items: center;
+        overflow: hidden;
+        background:
+          linear-gradient(rgba(116, 221, 245, 0.075) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(116, 221, 245, 0.075) 1px, transparent 1px),
+          rgba(2, 22, 42, 0.43);
+        background-size: 28px 28px;
+        border-radius: 0.95rem;
+      }
+
+      .scanner::before {
+        position: absolute;
+        width: 210px;
+        height: 210px;
+        border: 1px solid rgba(116, 221, 245, 0.28);
+        border-radius: 50%;
+        box-shadow: 0 0 0 24px rgba(116, 221, 245, 0.05), 0 0 0 58px rgba(116, 221, 245, 0.035);
+        content: "";
+      }
+
+      .scanner::after {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #74ddf5, transparent);
+        animation: scan 3.4s ease-in-out infinite;
+        content: "";
+      }
+
+      @keyframes scan {
+        0%,
+        100% {
+          transform: translateY(-105px);
+          opacity: 0;
+        }
+        20%,
+        80% {
+          opacity: 1;
+        }
+        50% {
+          transform: translateY(105px);
+        }
+      }
+
+      .scanner-device {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        width: 130px;
+        height: 166px;
+        place-items: center;
+        color: var(--cyan);
+        background: linear-gradient(145deg, #154d73, #06223e);
+        border: 1px solid rgba(116, 221, 245, 0.6);
+        border-radius: 20px 20px 30px 30px;
+        box-shadow: 0 0 30px rgba(45, 169, 244, 0.25);
+        transform: rotate(-7deg);
+      }
+
+      .scanner-device::before {
+        position: absolute;
+        top: 18px;
+        width: 58px;
+        height: 45px;
+        background: rgba(116, 221, 245, 0.1);
+        border: 1px solid rgba(116, 221, 245, 0.5);
+        border-radius: 7px;
+        content: "";
+      }
+
+      .scanner-device svg {
+        width: 45px;
+        height: 45px;
+      }
+
+      .scanner-label {
+        position: absolute;
+        right: 1rem;
+        bottom: 0.85rem;
+        left: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        color: #bfeef8;
+        font-family: monospace;
+        font-size: 0.68rem;
+        direction: ltr;
+        text-align: center;
+      }
+
+      .trust-strip {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        padding: 0;
+        color: white;
+        background: rgba(116, 221, 245, 0.18);
+      }
+
+      .trust-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        min-height: 84px;
+        padding: 1.05rem clamp(1rem, 4vw, 3.2rem);
+        background: rgba(7, 27, 51, 0.45);
+      }
+
+      .trust-item svg {
+        flex: 0 0 auto;
+        width: 24px;
+        height: 24px;
+        color: var(--sand);
+      }
+
+      .trust-item strong {
+        display: block;
+        font-size: 0.96rem;
+      }
+
+      .trust-item span {
+        display: block;
+        color: #b8d5e8;
+        font-size: 0.72rem;
+      }
+
+      .section {
+        padding: 5.8rem 0 0;
+      }
+
+      .section-heading {
+        max-width: 650px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2.2rem;
+      }
+
+      .section-kicker {
+        margin-bottom: 0.35rem;
+        color: var(--blue);
+        font-size: 0.79rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+      }
+
+      h2 {
+        margin-bottom: 0.6rem;
+        color: var(--navy);
+        font-size: clamp(1.75rem, 3.5vw, 2.7rem);
+        line-height: 1.25;
+        letter-spacing: -0.045em;
+      }
+
+      .section-heading p {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 0.98rem;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .service-card {
+        position: relative;
+        overflow: hidden;
+        min-height: 235px;
+        padding: 1.4rem;
+        background: rgba(255, 255, 255, 0.79);
+        border: 1px solid rgba(22, 135, 218, 0.11);
+        border-radius: 1.15rem;
+        box-shadow: 0 12px 32px rgba(37, 111, 144, 0.07);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .service-card:hover {
+        box-shadow: 0 18px 35px rgba(37, 111, 144, 0.15);
+        transform: translateY(-6px);
+      }
+
+      .service-card::after {
+        position: absolute;
+        top: -26px;
+        left: -26px;
+        width: 80px;
+        height: 80px;
+        border: 1px solid rgba(22, 135, 218, 0.13);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .icon-box {
+        display: grid;
+        width: 53px;
+        height: 53px;
+        margin-bottom: 1rem;
+        place-items: center;
+        color: var(--blue);
+        background: #e5f7fd;
+        border: 1px solid #c9eef8;
+        border-radius: 0.9rem;
+      }
+
+      .icon-box svg {
+        width: 26px;
+        height: 26px;
+      }
+
+      .service-card h3 {
+        margin-bottom: 0.35rem;
+        color: var(--navy);
+        font-size: 1.05rem;
+      }
+
+      .service-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 0.84rem;
+      }
+
+      .about {
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      .about-visual {
+        position: relative;
+        min-height: 350px;
+        overflow: hidden;
+        padding: 1.5rem;
+        color: white;
+        background:
+          linear-gradient(145deg, rgba(6, 33, 61, 0.96), rgba(15, 126, 166, 0.85)),
+          #0b2d50;
+        border-radius: 1.4rem;
+        box-shadow: var(--shadow);
+      }
+
+      .about-visual::before,
+      .about-visual::after {
+        position: absolute;
+        border: 1px solid rgba(116, 221, 245, 0.25);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .about-visual::before {
+        right: -3rem;
+        bottom: -7rem;
+        width: 24rem;
+        height: 24rem;
+      }
+
+      .about-visual::after {
+        top: -4rem;
+        left: -3rem;
+        width: 14rem;
+        height: 14rem;
+      }
+
+      .about-visual-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        height: 100%;
+        min-height: 318px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .about-visual .seal {
+        display: grid;
+        width: 95px;
+        height: 95px;
+        place-items: center;
+        color: var(--navy);
+        text-align: center;
+        background: var(--sand);
+        border: 7px solid rgba(255, 255, 255, 0.17);
+        border-radius: 50%;
+        outline: 1px dashed rgba(243, 200, 120, 0.75);
+        outline-offset: -12px;
+        font-size: 0.7rem;
+        font-weight: 900;
+        line-height: 1.3;
+      }
+
+      .about-visual h3 {
+        max-width: 300px;
+        margin: 0 0 0.4rem;
+        color: white;
+        font-size: 1.45rem;
+        line-height: 1.45;
+      }
+
+      .about-visual p {
+        margin: 0;
+        color: #c8ecf4;
+        font-size: 0.84rem;
+      }
+
+      .about-copy p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-left: auto;
+        color: var(--muted);
+        font-size: 0.98rem;
+      }
+
+      .check-list {
+        display: grid;
+        gap: 0.8rem;
+        margin: 1.45rem 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .check-list li {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0.65rem;
+        color: var(--ink);
+        font-size: 0.9rem;
+      }
+
+      .check-list svg {
+        flex: 0 0 auto;
+        width: 20px;
+        height: 20px;
+        margin-top: 0.15rem;
+        color: var(--blue);
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.75rem;
+        margin-top: 2rem;
+      }
+
+      .feature {
+        padding: 1.1rem 0.8rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.66);
+        border: 1px solid var(--line);
+        border-radius: 0.9rem;
+      }
+
+      .feature strong {
+        display: block;
+        color: var(--navy);
+        font-size: 1.25rem;
+      }
+
+      .feature span {
+        display: block;
+        margin-top: 0.2rem;
+        color: var(--muted);
+        font-size: 0.72rem;
+        line-height: 1.4;
+      }
+
+      .reviews-section {
+        position: relative;
+        margin-top: 5.8rem;
+        padding: 4.5rem 0;
+        background: var(--navy);
+        border-radius: 1.6rem;
+      }
+
+      .reviews-section::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.38;
+        background-image: radial-gradient(rgba(116, 221, 245, 0.24) 1px, transparent 1px);
+        background-size: 18px 18px;
+        content: "";
+        mask-image: linear-gradient(90deg, black, transparent 75%);
+      }
+
+      .reviews-inner {
+        position: relative;
+        z-index: 1;
+        padding: 0 clamp(1.2rem, 5vw, 4.6rem);
+      }
+
+      .reviews-inner .section-kicker {
+        color: var(--cyan);
+      }
+
+      .reviews-inner h2 {
+        color: white;
+      }
+
+      .reviews-inner .section-heading p {
+        color: #b8d5e8;
+      }
+
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .review {
+        padding: 1.35rem;
+        background: rgba(255, 255, 255, 0.095);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 1rem;
+      }
+
+      .stars {
+        margin-bottom: 0.75rem;
+        color: var(--sand);
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+      }
+
+      .review blockquote {
+        margin: 0 0 1rem;
+        color: #e4f4f8;
+        font-size: 0.88rem;
+      }
+
+      .review figcaption {
+        color: #9fc6da;
+        font-size: 0.76rem;
+      }
+
+      .contact {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 1.2rem;
+        align-items: stretch;
+        padding: 2rem;
+        color: white;
+        background: linear-gradient(130deg, #0e75ad, #092c50);
+        border-radius: 1.35rem;
+        box-shadow: var(--shadow);
+      }
+
+      .contact h2 {
+        margin-bottom: 0.6rem;
+        color: white;
+        font-size: clamp(1.55rem, 3vw, 2.35rem);
+      }
+
+      .contact p {
+        max-width: 520px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.2rem;
+        color: #d0edf5;
+        font-size: 0.9rem;
+      }
+
+      .contact-number {
+        display: inline-flex;
+        direction: ltr;
+        align-items: center;
+        gap: 0.55rem;
+        color: var(--sand);
+        font-size: 1.55rem;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+      }
+
+      .contact-number svg {
+        width: 21px;
+        height: 21px;
+      }
+
+      .contact-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+      }
+
+      .contact-actions .btn {
+        width: 100%;
+        max-width: 250px;
+        min-height: 62px;
+        font-size: 1.03rem;
+      }
+
+      .whatsapp {
+        color: white;
+        background: var(--green);
+      }
+
+      .whatsapp:hover,
+      .whatsapp:focus-visible {
+        background: #10a962;
+        box-shadow: 0 13px 25px rgba(19, 189, 112, 0.24);
+      }
+
+      .footer {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1.5rem;
+        align-items: end;
+        justify-items: center;
+        padding: 3rem 0 1rem;
+      }
+
+      .footer-copy {
+        color: var(--muted);
+        font-size: 0.76rem;
+        text-align: center;
+      }
+
+      .footer-copy p {
+        margin-bottom: 0.28rem;
+      }
+
+      .designer {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        color: var(--blue);
+        font-weight: 800;
+      }
+
+      .designer:hover {
+        color: var(--navy);
+        text-decoration: underline;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.9rem;
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+
+      .footer-links a:hover {
+        color: var(--blue);
+      }
+
+      .contact-bot {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 12;
+        width: min(300px, calc(100vw - 2rem));
+        text-align: center;
+      }
+
+      .contact-bot-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.55rem;
+        min-width: 168px;
+        min-height: 50px;
+        padding: 0.7rem 1rem;
+        color: white;
+        background: linear-gradient(135deg, #0d82d4, #0755a4);
+        border: 3px solid white;
+        border-radius: 999px;
+        box-shadow: 0 10px 28px rgba(4, 25, 49, 0.3);
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 0.86rem;
+        font-weight: 900;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .contact-bot-toggle::before {
+        width: 8px;
+        height: 8px;
+        background: #58f19a;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(88, 241, 154, 0.18);
+        content: "";
+      }
+
+      .contact-bot-toggle:hover,
+      .contact-bot-toggle:focus-visible {
+        box-shadow: 0 14px 32px rgba(4, 25, 49, 0.4);
+        transform: translateY(-3px);
+      }
+
+      .contact-bot-panel {
+        display: none;
+        margin-bottom: 0.65rem;
+        padding: 1rem;
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.97);
+        border: 1px solid rgba(22, 135, 218, 0.18);
+        border-radius: 1rem;
+        box-shadow: 0 16px 38px rgba(4, 25, 49, 0.22);
+      }
+
+      .contact-bot-panel.open {
+        display: block;
+        animation: botPanelIn 0.25s ease both;
+      }
+
+      @keyframes botPanelIn {
+        from {
+          opacity: 0;
+          transform: translateY(8px) scale(0.97);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .contact-bot-panel strong {
+        display: block;
+        margin-bottom: 0.25rem;
+        color: var(--navy);
+        font-size: 0.98rem;
+      }
+
+      .contact-bot-panel p {
+        margin-bottom: 0.75rem;
+        color: var(--muted);
+        font-size: 0.76rem;
+        line-height: 1.6;
+      }
+
+      .contact-bot-actions {
+        display: grid;
+        gap: 0.5rem;
+      }
+
+      .contact-bot-actions .btn {
+        width: 100%;
+        min-height: 45px;
+        font-size: 0.82rem;
+      }
+
+      .floating-actions {
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 1rem;
+        display: grid;
+        gap: 0.65rem;
+        transform: translateY(-50%);
+      }
+
+      .float-btn {
+        display: grid;
+        width: 51px;
+        height: 51px;
+        place-items: center;
+        color: white;
+        border: 3px solid white;
+        border-radius: 50%;
+        box-shadow: 0 8px 22px rgba(4, 25, 49, 0.25);
+        transition: transform 0.2s ease;
+      }
+
+      .float-btn:hover,
+      .float-btn:focus-visible {
+        transform: scale(1.1);
+      }
+
+      .float-btn svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      .float-whatsapp {
+        background: var(--green);
+      }
+
+      .float-call {
+        background: #147ee2;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      @media (max-width: 920px) {
+        .hero {
+          grid-template-columns: 1fr;
+          min-height: auto;
+          padding-top: 3.5rem;
+          padding-bottom: 3.5rem;
+        }
+
+        .hero-card {
+          max-width: 520px;
+        }
+
+        .about,
+        .contact {
+          grid-template-columns: 1fr;
+        }
+
+        .about-visual {
+          min-height: 280px;
+        }
+
+        .about-visual-content {
+          min-height: 248px;
+        }
+
+        .contact-actions {
+          justify-content: flex-start;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .page-shell {
+          padding: 0 0.75rem 1rem;
+        }
+
+        .topbar {
+          min-height: 0;
+        }
+
+        .menu-toggle {
+          display: none;
+        }
+
+        .nav {
+          position: static;
+          display: flex;
+          padding: 0.75rem;
+          background: rgba(7, 27, 51, 0.42);
+          border: 1px solid rgba(116, 221, 245, 0.22);
+          border-radius: 0.9rem;
+          box-shadow: none;
+          order: 1;
+        }
+
+        .nav.open {
+          display: flex;
+        }
+
+        .header-call {
+          display: inline-flex;
+          order: 3;
+        }
+
+        .hero-wrap {
+          border-radius: 20px;
+        }
+
+        .hero {
+          gap: 1.7rem;
+          padding: 3rem 1.2rem 2.6rem;
+        }
+
+        h1 {
+          font-size: clamp(2rem, 10vw, 3.05rem);
+        }
+
+        .hero-actions {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .hero-actions .btn {
+          width: 100%;
+          min-width: 0;
+        }
+
+        .hero-card {
+          min-height: 285px;
+          padding: 0.85rem;
+        }
+
+        .scanner {
+          min-height: 205px;
+        }
+
+        .scanner-device {
+          width: 105px;
+          height: 135px;
+        }
+
+        .trust-strip {
+          grid-template-columns: 1fr;
+        }
+
+        .trust-item {
+          min-height: 67px;
+        }
+
+        .section {
+          padding-top: 4.2rem;
+        }
+
+        .services-grid,
+        .reviews-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .service-card {
+          min-height: 0;
+        }
+
+        .features {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .reviews-section {
+          margin-top: 4.2rem;
+          padding: 3.2rem 0;
+          border-radius: 1rem;
+        }
+
+        .contact {
+          padding: 1.35rem;
+          border-radius: 1rem;
+        }
+
+        .contact-number {
+          font-size: 1.25rem;
+        }
+
+        .contact-actions {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .contact-actions .btn {
+          max-width: none;
+        }
+
+        .footer {
+          grid-template-columns: 1fr;
+          align-items: start;
+          padding-top: 2.2rem;
+        }
+
+        .footer-links {
+          justify-content: flex-start;
+        }
+
+        .floating-actions {
+          right: 0.65rem;
+          left: auto;
+        }
+
+        .float-btn {
+          width: 46px;
+          height: 46px;
+        }
+
+        .contact-bot {
+          right: 0.65rem;
+          bottom: 0.65rem;
+        }
+
+        .floating-actions {
+          bottom: 5.2rem;
+          top: auto;
+          transform: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      /* Corporate visual refresh */
+      body {
+        background:
+          radial-gradient(circle at 8% 12%, rgba(37, 175, 222, 0.08), transparent 22rem),
+          #f5f9fc;
+        color: #19344d;
+      }
+
+      .hero-wrap {
+        background: #ffffff;
+        border: 1px solid #dcecf4;
+        box-shadow: 0 22px 60px rgba(27, 82, 111, 0.12);
+      }
+
+      .hero-wrap::before,
+      .hero-wrap::after,
+      .scanner::before,
+      .scanner::after {
+        display: none;
+      }
+
+      .topbar {
+        color: var(--navy);
+        border-bottom: 1px solid #e4f0f5;
+      }
+
+      .brand-text span,
+      .nav,
+      .nav a {
+        color: #58748b;
+      }
+
+      .nav a:hover,
+      .nav a:focus-visible {
+        color: var(--blue);
+      }
+
+      .hero {
+        min-height: 535px;
+        padding-top: 3.6rem;
+        padding-bottom: 3.6rem;
+        background:
+          linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.9) 48%, rgba(255, 255, 255, 0.58) 100%),
+          url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=86") center / cover;
+      }
+
+      h1 {
+        max-width: 570px;
+        color: #0b2f4d;
+        font-size: clamp(2rem, 4vw, 3.25rem);
+        letter-spacing: -0.04em;
+      }
+
+      .hero h1 span {
+        display: block;
+        margin-top: 0.3rem;
+        color: #1188bb !important;
+        font-size: 0.72em;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+      }
+
+      .hero-copy > p:not(.eyebrow) {
+        color: #58748b;
+        font-size: 1rem;
+      }
+
+      .eyebrow {
+        color: #1188bb;
+      }
+
+      .hero-card {
+        min-height: 355px;
+        padding: 1rem;
+        background:
+          linear-gradient(145deg, rgba(3, 43, 72, 0.18), rgba(3, 43, 72, 0.72)),
+          url("https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1100&q=86") center / cover;
+        border: 8px solid #ffffff;
+        box-shadow: 0 18px 42px rgba(16, 67, 94, 0.18);
+      }
+
+      .hero-card-top {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+      }
+
+      .scanner {
+        min-height: 285px;
+        background: transparent;
+      }
+
+      .scanner-device {
+        display: none;
+      }
+
+      .scanner-label {
+        padding: 0.45rem 0.75rem;
+        color: white;
+        background: rgba(3, 36, 61, 0.72);
+        border-radius: 999px;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      }
+
+      .trust-strip {
+        background: #e5f2f7;
+      }
+
+      .trust-item {
+        color: var(--navy);
+        background: #ffffff;
+      }
+
+      .trust-item span {
+        color: #668297;
+      }
+
+      .section-kicker {
+        color: #1188bb;
+      }
+
+      h2 {
+        color: #0b2f4d;
+      }
+
+      .service-card {
+        background: #ffffff;
+        border-color: #dcecf4;
+        box-shadow: 0 10px 26px rgba(27, 82, 111, 0.06);
+      }
+
+      .service-card:hover {
+        box-shadow: 0 18px 34px rgba(27, 82, 111, 0.13);
+      }
+
+      .about-visual {
+        min-height: 350px;
+        background:
+          linear-gradient(145deg, rgba(4, 49, 78, 0.22), rgba(4, 49, 78, 0.78)),
+          url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1100&q=86") center / cover;
+      }
+
+      .about-visual::before,
+      .about-visual::after {
+        display: none;
+      }
+
+      .reviews-section {
+        background:
+          linear-gradient(120deg, rgba(7, 52, 82, 0.97), rgba(14, 122, 164, 0.92)),
+          url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80") center / cover;
+        box-shadow: 0 18px 46px rgba(17, 71, 98, 0.16);
+      }
+
+      .reviews-section::before {
+        display: none;
+      }
+
+      .contact {
+        background: linear-gradient(135deg, #087daf, #0b3558);
+      }
+
+      .contact-status {
+        display: none;
+        margin-top: 0.65rem;
+        color: #0a9a59;
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
+
+      .contact-status.visible {
+        display: block;
+      }
+
+      .contact-status::before {
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        margin-left: 0.35rem;
+        background: #0a9a59;
+        border-radius: 50%;
+        content: "";
+      }
+
+      .footer,
+      .footer-links {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">انتقل إلى المحتوى</a>
+
+    <div class="page-shell">
+      <div class="hero-wrap">
+        <header class="topbar" aria-label="رأس الصفحة">
+          <a class="brand" href="#home" aria-label="كشف تسربات المياه - الصفحة الرئيسية">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 3.5S6.7 9.6 6.7 14.2a5.3 5.3 0 0 0 10.6 0C17.3 9.6 12 3.5 12 3.5Z" />
+                <path d="M9.2 14.9c.2 1.5 1.2 2.3 2.8 2.5" />
+              </svg>
+            </span>
+            <span class="brand-text">
+              <strong>خبير التسربات</strong>
+              <span>حلول دقيقة في جازان</span>
+            </span>
+          </a>
+
+          <nav class="nav" id="site-nav" aria-label="التنقل الرئيسي">
+            <a href="#services">خدماتنا</a>
+            <a href="#about">من نحن</a>
+            <a href="#reviews">آراء العملاء</a>
+            <a href="#contact">تواصل معنا</a>
+          </nav>
+
+          <a class="header-call" href="tel:+966500402056" data-contact-event>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z" />
+            </svg>
+            0500402056
+          </a>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </header>
+
+        <main id="main-content">
+          <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">خدمة موثوقة في منطقة جازان</p>
+              <h1 id="hero-title">هنا نكتشف التسربات بدقة<span>ونحمي منزلك من الهدر</span></h1>
+              <p>
+                كشف تسربات المياه بأحدث الأجهزة الإلكترونية والحرارية، مع حلول عملية تساعدك على خفض فاتورة المياه وحماية منزلك.
+              </p>
+              <div class="action-prompt">تواصل معنا الآن — نصل إليك في جازان</div>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="tel:+966500402056" data-contact-event>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z" />
+                  </svg>
+                  اتصل الآن
+                </a>
+                <a class="btn whatsapp" href="https://wa.me/966500402056" target="_blank" rel="noopener" data-contact-event>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z" />
+                    <path d="M8.5 8.7c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c.6 1.1 1.5 1.9 2.6 2.4l.5-.6c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.3.2.6-.1.5-.4 1-1 1.2-.6.2-1.5-.1-2.3-.5-1.8-.9-3.3-2.2-4.3-3.9-.5-.8-.8-1.7-.6-2.6.1-.2.2-.4.4-.6Z" />
+                  </svg>
+                  واتساب
+                </a>
+              </div>
+              <div class="hero-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 3 5 6v5c0 4.5 3 8.7 7 10 4-1.3 7-5.5 7-10V6l-7-3Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <span>تقارير معتمدة لدى شركة المياه الوطنية</span>
+              </div>
+            </div>
+
+            <div class="hero-card reveal" aria-label="معاينة جهاز كشف التسرب">
+              <div class="hero-card-top">
+                <span>تقنية الفحص الذكي</span>
+                <span class="live-dot">جاهز للفحص</span>
+              </div>
+              <div class="scanner">
+                <div class="scanner-device" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35">
+                    <circle cx="12" cy="12" r="5.2" />
+                    <path d="M12 6.8v10.4M6.8 12h10.4M8.3 8.3l7.4 7.4M15.7 8.3l-7.4 7.4" />
+                  </svg>
+                </div>
+                <div class="scanner-label">
+                  <span>THERMAL SCAN</span>
+                  <span>READY / 100%</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="trust-strip" aria-label="مميزات الخدمة">
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 3 5 6v5c0 4.5 3 8.7 7 10 4-1.3 7-5.5 7-10V6l-7-3Z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              <div><strong>تقارير معتمدة</strong><span>مقبولة لدى شركة المياه الوطنية</span></div>
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2v20M2 12h20" />
+                <circle cx="12" cy="12" r="8.5" />
+                <path d="m8.5 15.5 7-7" />
+              </svg>
+              <div><strong>أجهزة حديثة</strong><span>إلكترونية وحرارية عالية الدقة</span></div>
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 11.5 12 4l9 7.5v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-8Z" />
+                <path d="M8 20.5v-5h8v5M9 10h.01M12 10h.01M15 10h.01" />
+              </svg>
+              <div><strong>خدمة داخل جازان</strong><span>استجابة سريعة ومواعيد مرنة</span></div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <section class="section reveal" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <div class="section-kicker">ماذا نقدم؟</div>
+          <h2 id="services-title">تشخيص واضح، حل أسرع، وراحة بال</h2>
+          <p>نحدد مصدر المشكلة بدقة ونقدم لك تقريرًا واضحًا يساعدك على اتخاذ القرار المناسب دون تكسير عشوائي.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <circle cx="11" cy="11" r="6.5" />
+                <path d="m16 16 4.5 4.5M11 7v4l2.5 1.5" />
+              </svg>
+            </div>
+            <h3>كشف التسرب الإلكتروني</h3>
+            <p>تحديد أماكن التسرب المخفية في الجدران والأرضيات دون تكسير أو تخمين.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M6 4h12v16H6z" />
+                <path d="M9 8h6M9 12h6M9 16h3" />
+                <path d="M4 7h2M18 7h2M4 12h2M18 12h2M4 17h2M18 17h2" />
+              </svg>
+            </div>
+            <h3>الفحص الحراري</h3>
+            <p>قراءة التغيرات الحرارية للوصول إلى التسربات الدقيقة في وقت قياسي.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M6 3h9l3 3v15H6z" />
+                <path d="M15 3v4h4M9 12h6M9 16h4" />
+                <path d="m8.5 8.5.8.8 1.8-1.8" />
+              </svg>
+            </div>
+            <h3>تقرير معتمد</h3>
+            <p>تقرير فني موثق يوضح مكان التسرب وسببه، معتمد لدى شركة المياه الوطنية.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="m13 2-9 12h7l-1 8 9-12h-7l1-8Z" />
+              </svg>
+            </div>
+            <h3>حل ارتفاع الفاتورة</h3>
+            <p>نساعدك في معرفة سبب الاستهلاك غير الطبيعي وتقليل الهدر المائي.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M4 19h16M6 19V9l6-4 6 4v10M9 19v-5h6v5M3 9h18" />
+              </svg>
+            </div>
+            <h3>فحص الخزانات والمسابح</h3>
+            <p>فحص مصادر التسرب في الخزانات والمسابح والمواسير الداخلية والخارجية.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M7 3h10M9 3v4l-2 3v8a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-8l-2-3V3" />
+                <path d="M8 14h8" />
+              </svg>
+            </div>
+            <h3>معالجة الرطوبة</h3>
+            <p>تتبع أسباب الرطوبة وآثارها قبل أن تتحول إلى تلف مكلف في المبنى.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about reveal" id="about" aria-labelledby="about-title">
+        <div class="about-visual">
+          <div class="about-visual-content">
+            <div class="seal">شركة<br />معتمدة</div>
+            <div>
+              <h3>خبرة تقنية تحمي بيتك من الهدر</h3>
+              <p>نستخدم أدوات الفحص المناسبة لكل حالة للوصول إلى نتيجة موثوقة.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-copy">
+          <div class="section-kicker">من نحن</div>
+          <h2 id="about-title">نقرأ ما لا تراه العين</h2>
+          <p>
+            نحن فريق متخصص في كشف تسربات المياه بجازان، نعمل على تشخيص التسربات الظاهرة والمخفية بأساليب احترافية وأجهزة إلكترونية وحرارية حديثة.
+          </p>
+          <p>
+            هدفنا أن تحصل على معلومة دقيقة من أول زيارة، مع تقرير فني معتمد يساعدك في حل مشكلة ارتفاع فاتورة المياه وحماية منزلك من الأضرار.
+          </p>
+          <ul class="check-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9" /><path d="m8 12 2.5 2.5L16 9" />
+              </svg>
+              <span>فحص دقيق بدون تكسير عشوائي</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9" /><path d="m8 12 2.5 2.5L16 9" />
+              </svg>
+              <span>تحديد السبب قبل بدء المعالجة</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9" /><path d="m8 12 2.5 2.5L16 9" />
+              </svg>
+              <span>خدمة مهنية وتواصل واضح</span>
+            </li>
+          </ul>
+          <div class="features" aria-label="أرقام ومميزات">
+            <div class="feature"><strong>01</strong><span>تحديد مصدر التسرب</span></div>
+            <div class="feature"><strong>02</strong><span>تقرير فني واضح</span></div>
+            <div class="feature"><strong>03</strong><span>تقليل الهدر</span></div>
+            <div class="feature"><strong>24/7</strong><span>تواصل واستفسارات</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section" id="reviews" aria-labelledby="reviews-title">
+        <div class="reviews-inner">
+          <div class="section-heading reveal">
+            <div class="section-kicker">تجارب عملائنا</div>
+            <h2 id="reviews-title">خدمة تترك أثرًا مطمئنًا</h2>
+            <p>نعتز بثقة أهل جازان، ونسعى أن تكون كل زيارة واضحة ومريحة من البداية إلى النهاية.</p>
+          </div>
+          <div class="reviews-grid">
+            <figure class="review reveal">
+              <div class="stars" aria-label="خمس نجوم">★★★★★</div>
+              <blockquote>“حددوا مكان التسرب بسرعة وبدون تكسير، والتقرير ساعدني في إنهاء إجراءات الفاتورة.”</blockquote>
+              <figcaption>— عميل من جازان</figcaption>
+            </figure>
+            <figure class="review reveal">
+              <div class="stars" aria-label="خمس نجوم">★★★★★</div>
+              <blockquote>“تعامل راقٍ وشرح واضح. عرفت سبب ارتفاع استهلاك المياه وحلّيت المشكلة.”</blockquote>
+              <figcaption>— عميلة من صبيا</figcaption>
+            </figure>
+            <figure class="review reveal">
+              <div class="stars" aria-label="خمس نجوم">★★★★★</div>
+              <blockquote>“جهاز الفحص كان دقيقًا جدًا، والنتيجة ظهرت من أول زيارة. أنصح بالتعامل معهم.”</blockquote>
+              <figcaption>— عميل من أبو عريش</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="contact" aria-labelledby="contact-title">
+        <div class="contact">
+          <div>
+            <div class="section-kicker" style="color: var(--cyan)">جاهزون لخدمتك</div>
+            <h2 id="contact-title">لا تترك التسرب يرفع فاتورتك</h2>
+            <p>اتصل الآن أو أرسل موقعك عبر واتساب، وسنساعدك في معرفة الخطوة المناسبة لفحص منزلك.</p>
+            <a class="contact-number" href="tel:+966500402056" data-contact-event>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z" />
+              </svg>
+              0500402056
+            </a>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="tel:+966500402056" data-contact-event>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z" />
+              </svg>
+              اتصال مباشر
+            </a>
+            <a class="btn whatsapp" href="https://wa.me/966500402056" target="_blank" rel="noopener" data-contact-event>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z" />
+                <path d="M8.5 8.7c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c.6 1.1 1.5 1.9 2.6 2.4l.5-.6c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.3.2.6-.1.5-.4 1-1 1.2-.6.2-1.5-.1-2.3-.5-1.8-.9-3.3-2.2-4.3-3.9-.5-.8-.8-1.7-.6-2.6.1-.2.2-.4.4-.6Z" />
+              </svg>
+              تحدث معنا
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-copy">
+          <p>
+            تم التصميم بواسطة
+            <a class="designer" href="https://wa.me/201029095046" target="_blank" rel="noopener">م. نجوى إبراهيم</a>
+          </p>
+          <p>© <span id="year"></span> جميع الحقوق محفوظة — كشف تسربات المياه بجازان</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">الرئيسية</a>
+          <a href="#services">الخدمات</a>
+          <a href="https://wa.me/201029095046" target="_blank" rel="noopener">واتساب المصممة</a>
+        </div>
+      </footer>
+    </div>
+
+    <div class="floating-actions" aria-label="تواصل سريع">
+      <a class="float-btn float-whatsapp" href="https://wa.me/966500402056" target="_blank" rel="noopener" aria-label="التواصل عبر واتساب" data-contact-event>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z" />
+          <path d="M8.5 8.7c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c.6 1.1 1.5 1.9 2.6 2.4l.5-.6c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.3.2.6-.1.5-.4 1-1 1.2-.6.2-1.5-.1-2.3-.5-1.8-.9-3.3-2.2-4.3-3.9-.5-.8-.8-1.7-.6-2.6.1-.2.2-.4.4-.6Z" />
+        </svg>
+      </a>
+      <a class="float-btn float-call" href="tel:+966500402056" aria-label="الاتصال الآن" data-contact-event>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="contact-bot" id="contact-bot">
+      <div class="contact-bot-panel" id="contact-bot-panel" aria-hidden="true">
+        <strong>كيف يمكننا مساعدتك؟</strong>
+        <p>ابدأ المحادثة الآن للحصول على المساعدة في كشف التسربات داخل جازان.</p>
+        <div class="contact-bot-actions">
+          <a class="btn whatsapp" href="https://wa.me/966500402056" target="_blank" rel="noopener" data-contact-event>
+            محادثة واتساب
+          </a>
+          <a class="btn btn-primary" href="tel:+966500402056" data-contact-event>
+            اتصال مباشر
+          </a>
+        </div>
+        <div class="contact-status" id="contact-status" role="status" aria-live="polite">
+          تم تسجيل حدث التواصل بنجاح
+        </div>
+      </div>
+      <button class="contact-bot-toggle" id="contact-bot-toggle" type="button" aria-expanded="false" aria-controls="contact-bot-panel">
+        تواصل الآن
+      </button>
+    </div>
+
+    <script>
+      (function () {
+        var menuToggle = document.getElementById("menu-toggle");
+        var siteNav = document.getElementById("site-nav");
+        var year = document.getElementById("year");
+
+        if (year) year.textContent = new Date().getFullYear();
+
+        if (menuToggle && siteNav) {
+          menuToggle.addEventListener("click", function () {
+            var isOpen = siteNav.classList.toggle("open");
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.setAttribute("aria-label", isOpen ? "إغلاق القائمة" : "فتح القائمة");
+          });
+
+          siteNav.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+              siteNav.classList.remove("open");
+              menuToggle.setAttribute("aria-expanded", "false");
+              menuToggle.setAttribute("aria-label", "فتح القائمة");
+            });
+          });
+        }
+
+        var revealItems = document.querySelectorAll(".reveal");
+        if ("IntersectionObserver" in window) {
+          var observer = new IntersectionObserver(
+            function (entries, currentObserver) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  currentObserver.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12 }
+          );
+          revealItems.forEach(function (item) {
+            observer.observe(item);
+          });
+        } else {
+          revealItems.forEach(function (item) {
+            item.classList.add("visible");
+          });
+        }
+      })();
+    </script>
+
+    <!-- TikTok Pixel Code Start -->
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+          "holdConsent",
+          "revokeConsent",
+          "grantConsent",
+        ];
+        ttq.setAndDefer = function (t, e) {
+          t[e] = function () {
+            t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+        ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        };
+        ttq.load = function (e, n) {
+          var r = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          var o = n && n.partner;
+          ttq._i = ttq._i || {};
+          ttq._i[e] = [];
+          ttq._i[e]._u = r;
+          ttq._t = ttq._t || {};
+          ttq._t[e] = +new Date();
+          ttq._o = ttq._o || {};
+          ttq._o[e] = n || {};
+          n = d.createElement("script");
+          n.type = "text/javascript";
+          n.async = !0;
+          n.src = r + "?sdkid=" + e + "&lib=" + t;
+          e = d.getElementsByTagName("script")[0];
+          e.parentNode.insertBefore(n, e);
+        };
+        ttq.load("D9STB4BC77UA78AD79G0");
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+    <!-- TikTok Pixel Code End -->
+    <script>
+      (function () {
+        var botToggle = document.getElementById("contact-bot-toggle");
+        var botPanel = document.getElementById("contact-bot-panel");
+        var contactStatus = document.getElementById("contact-status");
+
+        if (botToggle && botPanel) {
+          botToggle.addEventListener("click", function () {
+            var isOpen = botPanel.classList.toggle("open");
+            botToggle.setAttribute("aria-expanded", String(isOpen));
+            botPanel.setAttribute("aria-hidden", String(!isOpen));
+          });
+        }
+
+        document.querySelectorAll("[data-contact-event]").forEach(function (link) {
+          link.addEventListener("click", function () {
+            var isWhatsApp = link.href.indexOf("wa.me") !== -1;
+            var eventData = {
+              content_type: "contact",
+              content_name: isWhatsApp ? "WhatsApp" : "Phone Call",
+            };
+
+            if (window.ttq && typeof window.ttq.track === "function") {
+              window.ttq.track("Contact", eventData);
+            }
+
+            if (contactStatus) {
+              contactStatus.classList.add("visible");
+              contactStatus.textContent = isWhatsApp
+                ? "تم تسجيل حدث التواصل — سيتم فتح واتساب الآن"
+                : "تم تسجيل حدث الاتصال — سيتم فتح الاتصال الآن";
+            }
+
+            if (link.protocol === "tel:") {
+              var phoneLink = link.href;
+              event.preventDefault();
+              window.setTimeout(function () {
+                window.location.href = phoneLink;
+              }, 220);
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
